@@ -12,16 +12,15 @@ const AboutUs = () => {
         {/* THE PAGES CONTENT */}
 
         <div className="app__content app__flex">
-          <img src={images.profile2} alt="Franci's Photo" />
+          <img src={images.profile2} alt="Franci's" />
 
-          <div className="">
+          <div className="paragraph">
             <p className="p-s-text">
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima
               ipsam doloribus earum? Fugiat molestias, impedit rem nulla
               consectetur consequuntur explicabo asperiores distinctio, tempora
               officia iusto sit autem accusamus obcaecati aspernatur.
             </p>
-            <br></br>
 
             <p className="p-s-text">
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima
