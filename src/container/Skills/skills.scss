@@ -4,33 +4,29 @@
   flex-direction: column;
 }
 
+
+
 .app__skills-container {
-  width: 80%;
+  width:80%;
   margin-top: 3rem;
   display: flex;
-  justify-content:center;
+  justify-content:space-between;
   align-items:center;
-  // flex-wrap: wrap;
+  color:var(--black-color);
   flex-direction: row;
 
-  .app__skills-list{
-    .app__skills-education{
-      margin:10px 2px;
+  .app__skills-size{
+      width:400px;
+      margin:10px 10px;
+      border-radius:10px;
+
       h1{
         font-weight:700;
         color:var(--secondary-color);
       }
-    }
-    .app__skills-experience{
-      margin:10px 2px;
-      h1{
-        font-weight:700;
-        color:var(--secondary-color);
-      }
+
     }
 
-
-  }
 
   @media screen and (max-width: 900px) {
     width: 100%;

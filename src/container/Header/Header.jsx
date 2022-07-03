@@ -1,19 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import Typewriter from "typewriter-effect";
-import { AppWrap } from "../../wrapper";
 import "./Header.scss";
-
-// const scaleVariants = {
-//   whileInView: {
-//     scale: [0, 1],
-//     opacity: [0, 1],
-//     transition: {
-//       duration: 1,
-//       ease: "easeInOut",
-//     },
-//   },
-// };
 
 const Header = () => {
   return (

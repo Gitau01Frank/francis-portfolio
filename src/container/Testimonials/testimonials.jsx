@@ -25,6 +25,9 @@ const Testimonial = () => {
 
   return (
     <>
+      <h2 className="head-s-text">TESTIMONIALS</h2>
+      <div className="head__line"></div>
+
       {testimonials.length && (
         <>
           <div className="app__testimonial-item app__flex">
@@ -36,7 +39,7 @@ const Testimonial = () => {
               <p className="p-text">{testimonials[currentIndex].feedback}</p>
               <div>
                 <h4 className="bold-text">{testimonials[currentIndex].name}</h4>
-                <h5 className="p-text">{testimonials[currentIndex].company}</h5>
+                <h5 className="f-text">{testimonials[currentIndex].company}</h5>
               </div>
             </div>
           </div>

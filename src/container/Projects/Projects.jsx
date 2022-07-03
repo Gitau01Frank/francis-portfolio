@@ -95,7 +95,7 @@ const Work = () => {
   return (
     <>
       <div className="app__work-heading">
-        <h2 className="head-s-text">
+        <h2 className="head-text">
           My Creative <span>Portfolio</span> Section
         </h2>
         <div className="head__line"></div>
@@ -108,7 +108,7 @@ THE ACTIVE FILTER STATE TO THE NAME OF THE ITEMS EG WEB DESIGN NA NDO INATUMIKA 
       <div className="app__work-filter">
         {["UI/UX", "Web App", "Server App", "React JS", "All"].map(
           (item, index) => (
-            <div
+            <p
               key={index}
               onClick={() => handleWorkFilter(item)}
               className={`app__work-filter-item app__flex card__text ${
@@ -116,7 +116,7 @@ THE ACTIVE FILTER STATE TO THE NAME OF THE ITEMS EG WEB DESIGN NA NDO INATUMIKA 
               }`}
             >
               {item}
-            </div>
+            </p>
           )
         )}
       </div>
@@ -169,14 +169,10 @@ THE ACTIVE FILTER STATE TO THE NAME OF THE ITEMS EG WEB DESIGN NA NDO INATUMIKA 
 
             <div className="app__work-content app__flex">
               {/* This is the div for the title, heading paragrap ahd the tags. */}
-              <h4 className="bold-text">{work.title}</h4>
-              <p className="card__text" style={{ marginTop: 10 }}>
-                {work.description}
-              </p>
+              <h4 className="app__work-heading">{work.title}</h4>
+              <p className="app__work-description">{work.description}</p>
 
-              <div className="app__work-tag">
-                <p className="card__text">{work.tags[1]}</p>
-              </div>
+              <p className="app__work-tag">{work.tags[1]}</p>
             </div>
           </div>
         ))}
@@ -185,4 +181,4 @@ THE ACTIVE FILTER STATE TO THE NAME OF THE ITEMS EG WEB DESIGN NA NDO INATUMIKA 
   );
 };
 
-export default AppWrap(MotionWrap(Work, "app__works"), "work", "app__whitebg");
+export default AppWrap(MotionWrap(Work, "app__works"), "works");

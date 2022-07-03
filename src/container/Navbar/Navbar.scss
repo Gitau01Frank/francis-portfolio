@@ -3,16 +3,17 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0.4rem 1rem;
+  padding: 0.5 1rem;
   background: transparent;
   height:5rem;
   backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);
   position: fixed;
+  top:0.8rem;
   z-index: 2;
   color:var(--white-color);
   background-color: var(--primary-color);
-  margin:4px;
+  margin:0px 4px;
   border-radius:5px;
 }
 
@@ -21,6 +22,7 @@
   justify-content: flex-start;
   align-items: center;
   color:var(--white-color);
+  margin:0 2rem;
   span{
     color:var(--orange-color);
   }
@@ -81,31 +83,19 @@
   }
 }
 
-.app__navbar-menu {
-  width: 35px;
-  height: 35px;
-  border-radius: 50%;
-  position: relative;
 
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: var(--white-color);
-
-
-  svg {
-    width: 70%;
-    height: 70%;
-    color: var(--primary-color);
-  }
-  div {
+  .app__navbar-dropdown {
     position: fixed;
-    top: 5rem;
-    right: 0;
+    top: 6rem;
+    right:0.5rem;
     z-index: 5;
     padding:15px;
-    height:25rem;
-    width:12rem;
+    height:20rem;
+    width:13.5rem;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 0;
 
 
     display: flex;
@@ -161,7 +151,27 @@
     }
   }
 
+.app__navbar-menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  position: relative;
+  
+  svg{
+    width: 70%;
+    height: 70%;
+    color: var(--white-color);
+    position:relative;
+    right:1rem;
+
+  }
+  
+
   @media screen and (min-width: 900px) {
     display: none;
   }
+
 }

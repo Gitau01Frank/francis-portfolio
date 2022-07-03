@@ -15,44 +15,50 @@ const Navbar = () => {
         </h1>
       </div>
       <ul className="app__navbar-links">
-        {["home", "about", "services", "skills", "testimonials", "contact"].map(
-          (item) => (
-            <li className="app__flex p-text" key={`link-${item}`}>
-              <div />
-              <a href={`#${item}`}>{item}</a>
-            </li>
-          )
-        )}
+        {[
+          "home",
+          "about",
+          "services",
+          "skills",
+          "works",
+          "testimonials",
+          "contact",
+        ].map((item) => (
+          <li className="app__flex p-text" key={`link-${item}`}>
+            <div />
+            <a href={`#${item}`}>{item}</a>
+          </li>
+        ))}
       </ul>
-
       <div className="app__navbar-menu">
-        <HiMenuAlt4 onClick={() => setToggle(true)} />
-
-        {toggle && (
-          <motion.div
-            whileInView={{ opacity: [0, 1] }}
-            transition={{ duration: 1, ease: "easeOut" }}
-          >
-            <HiX onClick={() => setToggle(false)} />
-            <ul>
-              {[
-                "home",
-                "about",
-                "services",
-                "skills",
-                "testimonials",
-                "contact",
-              ].map((item) => (
-                <li key={item}>
-                  <a href={`#${item}`} onClick={() => setToggle(false)}>
-                    {item}
-                  </a>
-                </li>
-              ))}
-            </ul>
-          </motion.div>
-        )}
+        <HiMenuAlt4 onClick={() => setToggle(!toggle)} />
       </div>
+
+      {toggle && (
+        <motion.div
+          whileInView={{ opacity: [0, 1] }}
+          transition={{ duration: 1, ease: "easeOut" }}
+          className="app__navbar-dropdown"
+        >
+          <HiX onClick={() => setToggle(false)} />
+          <ul>
+            {[
+              "home",
+              "about",
+              "services",
+              "skills",
+              "testimonials",
+              "contact",
+            ].map((item) => (
+              <li key={item}>
+                <a href={`#${item}`} onClick={() => setToggle(false)}>
+                  {item}
+                </a>
+              </li>
+            ))}
+          </ul>
+        </motion.div>
+      )}
     </nav>
   );
 };

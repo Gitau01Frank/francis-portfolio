@@ -4,7 +4,7 @@ import { AppWrap, MotionWrap } from "../../wrapper";
 import "./Services.scss";
 
 const Services = () => {
-  const [abouts, setAbouts] = useState([
+  const [services, setServices] = useState([
     {
       title: "Websites & Web Application Improvement",
       description:
@@ -35,7 +35,7 @@ const Services = () => {
         <div className="head__line"></div>
 
         <div className="app__profiles">
-          {abouts.map((about, index) => (
+          {services.map((about, index) => (
             <motion.div
               whileInView={{ opacity: 1 }}
               whileHover={{ scale: 1.1 }}
@@ -44,12 +44,8 @@ const Services = () => {
               key={about.title + index}
             >
               <img src={about.imageUrl} alt={about.title} />
-              <h2 className="bold-text" style={{ marginTop: 20 }}>
-                {about.title}
-              </h2>
-              <p className="p-text" style={{ marginTop: 10 }}>
-                {about.description}
-              </p>
+              <h2>{about.title}</h2>
+              <p>{about.description}</p>
             </motion.div>
           ))}
         </div>

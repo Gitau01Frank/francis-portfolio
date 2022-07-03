@@ -2,7 +2,6 @@ import React, { useState } from "react";
 // import axios from "../../axios";
 import { images } from "../../constants";
 import { AppWrap, MotionWrap } from "../../wrapper";
-// import { client } from '../../client';
 import "./Footer.scss";
 
 const Footer = () => {
@@ -21,91 +20,101 @@ const Footer = () => {
     setFormData({ ...formData, [name]: value });
   };
 
-  // const handleSubmit = () => {
-  //   setLoading(true);
-
-  //   const contact = {
-  //     name: formData.username,
-  //     email: formData.email,
-  //     message: formData.message,
-  //   };
-  //   axios
-  //     .post("./contacts", contact)
-  //     .then(() => {
-  //       setLoading(false);
-  //       setIsFormSubmitted(true);
-  //     })
-  //     .catch((err) => console.log(err));
-  // };
-
   const handleSubmit = () => {
     setLoading(true);
 
-    // const contact = {
-    //   name: formData.username,
-    //   email: formData.email,
-    //   message: formData.message,
-    // };
+    const contact = {
+      name: formData.username,
+      email: formData.email,
+      message: formData.message,
+    };
+    setTimeout(() => {
+      setLoading(false);
+      setIsFormSubmitted(true);
+    }, 1500);
 
-    console.log("The form has been submitted successfully.");
+    // axios
+    //   .post("./contacts", contact)
+    //   .then(() => {
+    //     setLoading(false);
+    //     setIsFormSubmitted(true);
+    //   })
+    //   .catch((err) => console.log(err));
   };
 
   return (
     <>
-      <h2 className="head-text">Let's work together</h2>
-
-      <div className="app__footer-cards">
-        <div className="app__footer-card ">
-          <img src={images.email} alt="email" />
-          <a href="mailto:alfredgithinji87@gmail.com" className="p-text">
-            alfredgithinji87@gmail.com
-          </a>
-        </div>
-        <div className="app__footer-card">
-          <img src={images.mobile} alt="phone" />
-          <a href="tel:+254112615416" className="p-text">
-            +254112615416
-          </a>
-        </div>
-      </div>
       {!isFormSubmitted ? (
-        <div className="app__footer-form app__flex">
-          <div className="app__flex">
-            <input
-              className="p-text"
-              type="text"
-              placeholder="Your Name"
-              name="username"
-              value={username}
-              onChange={handleChangeInput}
-            />
+        <div>
+          <h2 className="head-text">Let's work together</h2>
+
+          <div className="app__footer-cards">
+            <div className="app__footer-card ">
+              <img src={images.email} alt="email" />
+              <a href="mailto:alfredgithinji87@gmail.com" className="p-text">
+                EMAIL
+              </a>
+            </div>
+            <div className="app__footer-card">
+              <img src={images.mobile} alt="phone" />
+              <a href="tel:+254112615416" className="p-text">
+                CALL ME
+              </a>
+            </div>
           </div>
-          <div className="app__flex">
-            <input
-              className="p-text"
-              type="email"
-              placeholder="Your Email"
-              name="email"
-              value={email}
-              onChange={handleChangeInput}
-            />
+
+          <div className="app__footer-form">
+            <div className="app__flex">
+              <input
+                className="p-text"
+                type="text"
+                placeholder="Your Name"
+                name="username"
+                value={username}
+                onChange={handleChangeInput}
+              />
+            </div>
+            <div className="app__flex">
+              <input
+                className="p-text"
+                type="email"
+                placeholder="Your Email"
+                name="email"
+                value={email}
+                onChange={handleChangeInput}
+              />
+            </div>
+            <div>
+              <textarea
+                className="p-text"
+                placeholder="Your Message"
+                value={message}
+                name="message"
+                onChange={handleChangeInput}
+              />
+            </div>
+            <button type="button" className="p-text" onClick={handleSubmit}>
+              {!loading ? "Send Message" : "Sending..."}
+            </button>
           </div>
-          <div>
-            <textarea
-              className="p-text"
-              placeholder="Your Message"
-              value={message}
-              name="message"
-              onChange={handleChangeInput}
-            />
-          </div>
-          <button type="button" className="p-text" onClick={handleSubmit}>
-            {!loading ? "Send Message" : "Sending..."}
-          </button>
         </div>
       ) : (
         <div>
-          <h3 className="head-text">Thank you for getting in touch!</h3>
+          <h3 className="footer-text">Thank you for getting in touch!</h3>
+          <div className="app__footer-cards">
+            <div className="app__footer-card ">
+              <img src={images.email} alt="email" />
+              <a href="mailto:alfredgithinji87@gmail.com" className="btn-text">
+                Email
+              </a>
+            </div>
+            <div className="app__footer-card">
+              <img src={images.mobile} alt="phone" />
+              <a href="tel:+254112615416" className="btn-text">
+                Call Me
+              </a>
+            </div>
+          </div>
         </div>
       )}
     </>

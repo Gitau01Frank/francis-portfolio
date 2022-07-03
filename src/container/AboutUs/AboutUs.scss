@@ -12,11 +12,17 @@
   }
 
   img{
+
     object-fit: cover;
-    border:1px solid var(--orange-color);
-    border-radius:5px;
+    border:1px solid black;
+    border-top-left-radius:25px;
+    border-top-right-radius:0px ;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 25px;
     margin:2rem 0;
     box-shadow: 2px 5px 10px 1px rgb(58, 56, 56);
+    height:400px;
+    width:300px;
   }
 
    @media screen and (max-width: 900px) {
