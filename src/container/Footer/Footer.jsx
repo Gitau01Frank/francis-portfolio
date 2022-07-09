@@ -2,6 +2,7 @@ import React, { useState } from "react";
 // import axios from "../../axios";
 import { images } from "../../constants";
 import { AppWrap, MotionWrap } from "../../wrapper";
+import SocialMedia2 from "../../components/SocialMedia2";
 import "./Footer.scss";
 
 const Footer = () => {
@@ -51,14 +52,8 @@ const Footer = () => {
           <div className="app__footer-cards">
             <div className="app__footer-card ">
               <img src={images.email} alt="email" />
-              <a href="mailto:alfredgithinji87@gmail.com" className="p-text">
+              <a href="mailto:franciswainainag@gmail.com" className="p-text">
                 EMAIL
-              </a>
-            </div>
-            <div className="app__footer-card">
-              <img src={images.mobile} alt="phone" />
-              <a href="tel:+254112615416" className="p-text">
-                CALL ME
               </a>
             </div>
           </div>
@@ -104,19 +99,14 @@ const Footer = () => {
           <div className="app__footer-cards">
             <div className="app__footer-card ">
               <img src={images.email} alt="email" />
-              <a href="mailto:alfredgithinji87@gmail.com" className="btn-text">
+              <a href="mailto:franciswainainag@gmail.com" className="btn-text">
                 Email
-              </a>
-            </div>
-            <div className="app__footer-card">
-              <img src={images.mobile} alt="phone" />
-              <a href="tel:+254112615416" className="btn-text">
-                Call Me
               </a>
             </div>
           </div>
         </div>
       )}
+      <SocialMedia2 />
     </>
   );
 };

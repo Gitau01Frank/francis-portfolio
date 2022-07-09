@@ -7,7 +7,7 @@
 
 
 .app__skills-container {
-  width:80%;
+  width:100%;
   margin-top: 3rem;
   display: flex;
   justify-content:space-between;
@@ -16,9 +16,11 @@
   flex-direction: row;
 
   .app__skills-size{
-      width:400px;
+      width:380px;
       margin:10px 10px;
+      padding:0.5rem 1rem;
       border-radius:10px;
+      border:1px solid var(--orange-color);
 
       h1{
         font-weight:700;

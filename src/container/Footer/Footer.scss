@@ -15,8 +15,9 @@
 .app__footer-cards {
   width: 90%;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
+  flex-direction: column;
   flex-wrap: wrap;
   margin: 4em 2rem 2rem;
   // border:1px solid black;
@@ -26,18 +27,15 @@
     color:var(--white-color);
   }
   .app__footer-card {
-    min-width: 200px;
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
-
     margin: 1rem 0;
     padding: 1rem;
     border-radius: 10px;
     cursor: pointer;
     background-color: #f2f7fb;
-
     transition: all 0.3s ease-in-out;
 
     img {
@@ -58,7 +56,7 @@
     }
 
     @media screen and (max-width: 450px) {
-      width: 100%;
+      // width: 100%;
     }
   }
 

@@ -24,53 +24,53 @@ const Skills = () => {
       <div className="head__line"></div>
 
       <div className="app__skills-container">
-        <div className="app__skills-size app__skills-list">
-          {/* EDUCATION */}
+        {/* <div className="app__skills-size app__skills-list"> */}
+        {/* EDUCATION */}
 
-          <div className="app__skills-size app__skills-education">
-            <h2 className="head-s-text">SERVICES</h2>
-            <div className="head__line"></div>
+        <div className="app__skills-size app__skills-education">
+          <h2 className="head-s-text">EDUCATION</h2>
+          <div className="head__line"></div>
 
-            <h4>Computer Science</h4>
-            <p>Jomo Kenyatta University</p>
+          <h4>Computer Science</h4>
+          <p>Jomo Kenyatta University</p>
 
-            <h4>Mechatronic Engineering</h4>
-            <p>Dedan Kimathi University</p>
-          </div>
-          {/* EXPERIENCE */}
-          <div className="app__skills-size app__skills-experience">
-            <h2 className="head-s-text">EXPERIENCE</h2>
-            <div className="head__line"></div>
-
-            <h4>CAD,3D modelling and Simulation</h4>
-            <p>5 Years Experience</p>
-
-            <h4>CAD,3D modelling and Simulation</h4>
-            <p>5 Years Experience</p>
-
-            <h4>CAD,3D modelling and Simulation</h4>
-            <p>5 Years Experience</p>
-          </div>
+          <h4>Mechatronic Engineering</h4>
+          <p>Dedan Kimathi University</p>
         </div>
+        {/* EXPERIENCE */}
+        <div className="app__skills-size app__skills-experience">
+          <h2 className="head-s-text">EXPERIENCE</h2>
+          <div className="head__line"></div>
+
+          <h4>CAD,3D modelling and Simulation</h4>
+          <p>5 Years Experience</p>
+
+          <h4>CAD,3D modelling and Simulation</h4>
+          <p>5 Years Experience</p>
+
+          <h4>CAD,3D modelling and Simulation</h4>
+          <p>5 Years Experience</p>
+        </div>
+        {/* </div> */}
 
         <div className="app__skills-size app___skills-skills">
           <h2 className="head-s-text">SKILLS</h2>
           <div className="head__line"></div>
 
-          <div style={{ width: "400px", padding: 20 }}>
+          <div style={{ width: "320px", padding: 20 }}>
             <h4> INVENTOR</h4>
             <ProgressBar now={80} />
           </div>
-          <div style={{ width: "400px", padding: 20 }}>
+          <div style={{ width: "320px", padding: 20 }}>
             <h4> AutoCAD</h4>
             <ProgressBar now={80} />
           </div>
-          <div style={{ width: "400px", padding: 20 }}>
+          <div style={{ width: "320px", padding: 20 }}>
             <h4>KiCAD</h4>
             <ProgressBar now={90} />
           </div>
 
-          <div style={{ width: "400px", padding: 20 }}>
+          <div style={{ width: "320px", padding: 20 }}>
             <h4>SIEMENS NX</h4>
             <ProgressBar now={90} />
           </div>

@@ -2,8 +2,8 @@ import React from "react";
 import { BsGithub, BsWhatsapp, BsTwitter } from "react-icons/bs";
 import { FaLinkedin } from "react-icons/fa";
 
-const SocialMedia = () => (
-  <div className="app__social">
+const SocialMedia2 = () => (
+  <div className="app__social2">
     <div>
       <a
         target="_blank"
@@ -43,4 +43,4 @@ const SocialMedia = () => (
   </div>
 );
 
-export default SocialMedia;
+export default SocialMedia2;
