@@ -94,12 +94,12 @@ const Work = () => {
 
   return (
     <>
-      <div className="app__work-heading">
-        <h2 className="head-text">
-          My Creative <span>Portfolio</span> Section
-        </h2>
-        <div className="head__line"></div>
-      </div>
+      {/* <div className="app__work-heading"> */}
+      <h2 className="head-text">
+        My Creative <span>Portfolio</span> Section
+      </h2>
+      <div className="head__line"></div>
+      {/* </div> */}
 
       {/* THIS ARE THE PILLS HEADING LOOPED OVER FOR AUTOMATED RENDER EACH ATTACHED TO THE CLICK FUNCTION THAT SETS 
 THE ACTIVE FILTER STATE TO THE NAME OF THE ITEMS EG WEB DESIGN NA NDO INATUMIKA KUSET COLOR.  */}

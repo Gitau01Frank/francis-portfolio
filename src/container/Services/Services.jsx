@@ -34,7 +34,9 @@ const Services = () => {
   return (
     <>
       <div className="app__container app__about">
-        <h2 className="head-text">MY SERVICES</h2>
+        <h2 className="head-text">
+          MY <span>SERVICES</span>
+        </h2>
         <div className="head__line"></div>
 
         <div className="app__profiles">

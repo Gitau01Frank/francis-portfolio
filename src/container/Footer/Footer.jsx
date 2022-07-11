@@ -24,11 +24,11 @@ const Footer = () => {
   const handleSubmit = () => {
     setLoading(true);
 
-    const contact = {
-      name: formData.username,
-      email: formData.email,
-      message: formData.message,
-    };
+    // const contact = {
+    //   name: formData.username,
+    //   email: formData.email,
+    //   message: formData.message,
+    // };
     setTimeout(() => {
       setLoading(false);
       setIsFormSubmitted(true);
@@ -47,7 +47,9 @@ const Footer = () => {
     <>
       {!isFormSubmitted ? (
         <div>
-          <h2 className="head-text">Let's work together</h2>
+          <h2 className="head-text">
+            Let's <span>work</span> together
+          </h2>
 
           <div className="app__footer-cards">
             <div className="app__footer-card ">

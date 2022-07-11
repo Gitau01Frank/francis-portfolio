@@ -13,11 +13,11 @@
 }
 
 .app__profile-item {
-  width:280px;
+  width:400px;
   border:1px solid var(--orange-color);
   display: flex;
-  justify-content: flex-start;
-  align-items: flex-start;
+  justify-content: center;
+  align-items: center;
   flex-direction: column;
   margin: 2rem;
   border-radius:5px;
@@ -40,15 +40,18 @@
 
   h2{
     text-align:center;
-    font-size: 22px;
+    font-size: 20px;
     text-transform:capitalize;
     margin-top:13px;
     color:var(--orange-color);
   }
+  @media screen and (max-width:500px){
+   width:320px;
+}
 
 
   @media screen and (min-width: 2000px) {
-    width: 370px;
+    width: 400px;
     margin: 2rem 4rem;
 
     img {

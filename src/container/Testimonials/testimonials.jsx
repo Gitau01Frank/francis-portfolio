@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { HiChevronLeft, HiChevronRight } from "react-icons/hi";
 // import { motion } from "framer-motion";
 // import axios from "../../axios";
@@ -7,18 +7,20 @@ import "./testimonials.scss";
 
 const Testimonial = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
-  const [testimonials, setTestimonials] = useState([
-    {
-      _id: { $oid: "627f8576ca8de56fc13de4ec" },
-      name: "Sarah Wanjiru",
-      company: "Dedan Kimathi University Of Technology",
-      imageUrl:
-        "https://freds-portfolio.s3.ap-southeast-1.amazonaws.com/Testimonial-1652524405838.jpeg",
-      feedback:
-        "Alfred is a super awesome teacher.He assisted me with the form handling logic with react.Thank you so much Alfred!",
-      __v: 0,
-    },
-  ]);
+  const [testimonials, setTestimonials] = useState([]);
+
+  useEffect(() => {
+    setTestimonials([
+      {
+        name: "Sarah Wanjiru",
+        company: "Jomo Kenyatta University Of Technology",
+        imageUrl:
+          "https://freds-portfolio.s3.ap-southeast-1.amazonaws.com/Testimonial-1652524405838.jpeg",
+        feedback:
+          "Francis is a super awesome engineer.He has a burning desire to learn new things and improve on his knowledge",
+      },
+    ]);
+  }, []);
   const handleClick = (index) => {
     setCurrentIndex(index);
   };
