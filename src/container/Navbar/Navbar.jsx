@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { HiMenuAlt4, HiX } from "react-icons/hi";
+import { RiMenu3Fill } from "react-icons/ri";
 import { motion } from "framer-motion";
 
 import "./Navbar.scss";
@@ -31,7 +32,7 @@ const Navbar = () => {
         ))}
       </ul>
       <div className="app__navbar-menu">
-        <HiMenuAlt4 onClick={() => setToggle(!toggle)} />
+        <RiMenu3Fill onClick={() => setToggle(!toggle)} />
       </div>
 
       {toggle && (

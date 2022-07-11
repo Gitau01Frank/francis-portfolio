@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import "./skills.scss";
 // import { motion } from "framer-motion";
 // import ReactTooltip from "react-tooltip";
@@ -11,10 +11,41 @@ import "bootstrap/dist/css/bootstrap.css";
 import ProgressBar from "react-bootstrap/ProgressBar";
 
 const Skills = () => {
-  // const [Wexperiences, setWExperiences] = useState([]);
-  // const [skills, setSkills] = useState([]);
-  // const [experiences, setExperiences] = useState([]);
-  // const [countOfProgess, setCountOfProgess] = useState(50);
+  const [education, setEducation] = useState([]);
+  const [skills, setSkills] = useState([]);
+  const [experience, setExperience] = useState([]);
+
+  useEffect(() => {
+    setEducation([
+      { course: "Computer Science", school: "Jomo Kenyatta University" },
+      { course: "Mechanical Engineering", school: "Jomo Kenyatta University" },
+    ]);
+
+    setExperience([
+      {
+        title: "CAD & Simulation",
+        duration: "July 2021 - July 2022",
+      },
+      { title: "3D modelling", duration: "2 Months" },
+    ]);
+
+    setSkills([
+      {
+        skill: "INVENTOR",
+        expertise: 80,
+      },
+
+      {
+        skill: "AUTOCAD",
+        expertise: 80,
+      },
+
+      {
+        skill: "SIEMENS NX",
+        expertise: 90,
+      },
+    ]);
+  }, []);
 
   return (
     <>
@@ -31,25 +62,23 @@ const Skills = () => {
           <h2 className="head-s-text">EDUCATION</h2>
           <div className="head__line"></div>
 
-          <h4>Computer Science</h4>
-          <p>Jomo Kenyatta University</p>
-
-          <h4>Mechatronic Engineering</h4>
-          <p>Dedan Kimathi University</p>
+          {education.map((education) => (
+            <>
+              <h4>{education.course}</h4>
+              <p>{education.school}</p>
+            </>
+          ))}
         </div>
         {/* EXPERIENCE */}
         <div className="app__skills-size app__skills-experience">
           <h2 className="head-s-text">EXPERIENCE</h2>
           <div className="head__line"></div>
-
-          <h4>CAD,3D modelling and Simulation</h4>
-          <p>5 Years Experience</p>
-
-          <h4>CAD,3D modelling and Simulation</h4>
-          <p>5 Years Experience</p>
-
-          <h4>CAD,3D modelling and Simulation</h4>
-          <p>5 Years Experience</p>
+          {experience.map((experience) => (
+            <>
+              <h4>{experience.title}</h4>
+              <span className="duration">{experience.duration}</span>
+            </>
+          ))}
         </div>
         {/* </div> */}
 
@@ -57,23 +86,12 @@ const Skills = () => {
           <h2 className="head-s-text">SKILLS</h2>
           <div className="head__line"></div>
 
-          <div style={{ width: "320px", padding: 20 }}>
-            <h4> INVENTOR</h4>
-            <ProgressBar now={80} />
-          </div>
-          <div style={{ width: "320px", padding: 20 }}>
-            <h4> AutoCAD</h4>
-            <ProgressBar now={80} />
-          </div>
-          <div style={{ width: "320px", padding: 20 }}>
-            <h4>KiCAD</h4>
-            <ProgressBar now={90} />
-          </div>
-
-          <div style={{ width: "320px", padding: 20 }}>
-            <h4>SIEMENS NX</h4>
-            <ProgressBar now={90} />
-          </div>
+          {skills.map((experience) => (
+            <div style={{ width: "320px", padding: 20 }}>
+              <h4>{experience.skill}</h4>
+              <ProgressBar now={experience.expertise} />
+            </div>
+          ))}
         </div>
       </div>
     </>

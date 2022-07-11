@@ -4,6 +4,12 @@
   flex-direction: column;
 }
 
+.duration{
+  background-color:var(--light-blue);
+  border-radius:10px;
+  color:var(--white-color);
+  padding:3px 0.5rem;
+}
 
 
 .app__skills-container {
@@ -16,9 +22,10 @@
   flex-direction: row;
 
   .app__skills-size{
-      width:380px;
+      width:330px;
       margin:10px 10px;
-      padding:0.5rem 1rem;
+      padding:2rem 0.8rem;
+      margin:0.5rem 1rem;
       border-radius:10px;
       border:1px solid var(--orange-color);
 
