@@ -18,13 +18,12 @@ const Header = () => {
             {/* Style will be inherited from the parent element */}
 
             <span className="text__dark">
-              I am good at
               <Typewriter
                 options={{
                   strings: [
-                    "PCB Design",
-                    "Mechanical Design",
-                    "CAD Design & Simulation. ",
+                    " I am a Designer.",
+                    " I am a Maker.",
+                    " I am an Engineer.",
                   ],
                   autoStart: true,
                   loop: true,

@@ -5,7 +5,16 @@ import about03 from "../assets/about03.png";
 import about04 from "../assets/about04.png";
 import profile2 from "../assets/profile2.png";
 import mobile from "../assets/mobile.png";
+import arduinopir from "../assets/arduino-pir.jpg";
+import blinkled from "../assets/blink-led.jpeg";
+import cloudcomputing from "../assets/cloud-computing.png";
+import embeddedsystems from "../assets/embedded-systems.jpg";
+
 const images = {
+  arduinopir,
+  blinkled,
+  cloudcomputing,
+  embeddedsystems,
   email,
   about01,
   about02,

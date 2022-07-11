@@ -17,8 +17,10 @@ const Skills = () => {
 
   useEffect(() => {
     setEducation([
-      { course: "Computer Science", school: "Jomo Kenyatta University" },
-      { course: "Mechanical Engineering", school: "Jomo Kenyatta University" },
+      {
+        course: "Computer & Electronics Engineering",
+        school: "Jomo Kenyatta University of Technology",
+      },
     ]);
 
     setExperience([
@@ -31,18 +33,30 @@ const Skills = () => {
 
     setSkills([
       {
-        skill: "INVENTOR",
-        expertise: 80,
-      },
-
-      {
-        skill: "AUTOCAD",
-        expertise: 80,
-      },
-
-      {
-        skill: "SIEMENS NX",
+        skill: "Embedded Systems",
         expertise: 90,
+      },
+
+      {
+        skill: "Network Programming",
+        expertise: 80,
+      },
+
+      {
+        skill: "HTML",
+        expertise: 95,
+      },
+      {
+        skill: "CSS",
+        expertise: 90,
+      },
+      {
+        skill: "GIT",
+        expertise: 90,
+      },
+      {
+        skill: "C",
+        expertise: 75,
       },
     ]);
   }, []);

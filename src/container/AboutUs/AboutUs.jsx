@@ -7,28 +7,20 @@ const AboutUs = () => {
     <>
       <div className="app__container app__about">
         {/* THIS IS THE FIRST BIT ABOUT THE HEADING. */}
-        <h2 className="head-s-text">ABOUT ME</h2>
+        <h2 className="head-s-text">WHO AM I?</h2>
         <div className="head__line"></div>
         {/* THE PAGES CONTENT */}
 
         <div className="app__content app__flex">
           <img src={images.profile2} alt="Franci's" />
 
-          <div className="paragraph">
-            <p className="p-s-text">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima
-              ipsam doloribus earum? Fugiat molestias, impedit rem nulla
-              consectetur consequuntur explicabo asperiores distinctio, tempora
-              officia iusto sit autem accusamus obcaecati aspernatur.
-            </p>
-
-            <p className="p-s-text">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima
-              ipsam doloribus earum? Fugiat molestias, impedit rem nulla
-              consectetur consequuntur explicabo asperiores distinctio, tempora
-              officia iusto sit autem accusamus obcaecati aspernatur.
-            </p>
-          </div>
+          <p className="p-s-text">
+            Warm Greeting.I am an electrical engineering student at Jomo
+            Kenyatta University of Technology with ample experience in circuit
+            design, PCB design and fabrication, control as well as automation
+            engineering. To check out what i have been involved in before check
+            out my blog pages, project page, and contact page.
+          </p>
         </div>
       </div>
     </>
