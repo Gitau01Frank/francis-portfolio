@@ -7,63 +7,22 @@ import "./Projects.scss";
 const Work = () => {
   const [works, setWorks] = useState([
     {
-      title: "Interfacing Arduino with PIR Sensor",
-      description:
-        "Dynamically collect information from clients and store it safely in one place for future reference.",
+      title: "Blink LED",
+      description: "Hello world with the arduino.",
       projectLink: "https://form-handlingreact.netlify.app/",
       codeLink: "https://github.com/FredzTech/Form_Handling-Front-End-",
       imageUrl:
-        "https://freds-portfolio.s3.ap-southeast-1.amazonaws.com/Work-1652488535780.jpeg",
-      tags: ["All", "Cloud Computing"],
-    },
-    {
-      title: "Project 2",
-      description:
-        "Dynamically collect information from clients and store it safely in one place for future reference.",
-      projectLink: "https://form-handlingreact.netlify.app/",
-      codeLink: "https://github.com/FredzTech/Form_Handling-Front-End-",
-      imageUrl:
-        "https://freds-portfolio.s3.ap-southeast-1.amazonaws.com/Work-1652488535780.jpeg",
-      tags: ["All", "Cloud Computing"],
-    },
-    {
-      title: "Blinking LED",
-      description:
-        "Dynamically collect information from clients and store it safely in one place for future reference.",
-      projectLink: "https://form-handlingreact.netlify.app/",
-      codeLink: "https://github.com/FredzTech/Form_Handling-Front-End-",
-      imageUrl:
-        "https://freds-portfolio.s3.ap-southeast-1.amazonaws.com/Work-1652488535780.jpeg",
+        "https://hackster.imgix.net/uploads/attachments/939539/blob_f9aEIFJtMW.blob?auto=compress&w=900&h=675&fit=min&fm=jpg",
       tags: ["All", "Embedded Systems"],
     },
     {
-      title: "Project 2",
+      title: "Interfacing Arduino with PIR sensor",
       description:
-        "Dynamically collect information from clients and store it safely in one place for future reference.",
+        "The PIR sensor is used to sense motion. In this case , when motion is detected, the buzzer goes off.",
       projectLink: "https://form-handlingreact.netlify.app/",
       codeLink: "https://github.com/FredzTech/Form_Handling-Front-End-",
       imageUrl:
-        "https://freds-portfolio.s3.ap-southeast-1.amazonaws.com/Work-1652488535780.jpeg",
-      tags: ["All", "Embedded Systems"],
-    },
-    {
-      title: "Project 3",
-      description:
-        "Dynamically collect information from clients and store it safely in one place for future reference.",
-      projectLink: "https://form-handlingreact.netlify.app/",
-      codeLink: "https://github.com/FredzTech/Form_Handling-Front-End-",
-      imageUrl:
-        "https://freds-portfolio.s3.ap-southeast-1.amazonaws.com/Work-1652488535780.jpeg",
-      tags: ["All", "Cloud Computing"],
-    },
-    {
-      title: "Project 4",
-      description:
-        "Dynamically collect information from clients and store it safely in one place for future reference.",
-      projectLink: "https://form-handlingreact.netlify.app/",
-      codeLink: "https://github.com/FredzTech/Form_Handling-Front-End-",
-      imageUrl:
-        "https://freds-portfolio.s3.ap-southeast-1.amazonaws.com/Work-1652488535780.jpeg",
+        "https://circuitdigest.com/sites/default/files/inlineimages/Arduino-motion-sensor.jpg",
       tags: ["All", "Embedded Systems"],
     },
   ]);

@@ -9,11 +9,6 @@ const AppWrap = (Component, idName, classNames) =>
         <SocialMedia />
         <div className="app__wrapper app__flex">
           <Component />
-
-          <div className="copyright">
-            <p>@2022 FRANCIS GITAU.</p>
-            <p>All rights reserved.</p>
-          </div>
         </div>
         <div>
           <NavigationDots active={idName} />

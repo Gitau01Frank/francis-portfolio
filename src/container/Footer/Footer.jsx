@@ -109,6 +109,11 @@ const Footer = () => {
         </div>
       )}
       <SocialMedia2 />
+
+      <div className="copyright">
+        <p>@2022 FRANCIS GITAU.</p>
+        <p>All rights reserved.</p>
+      </div>
     </>
   );
 };

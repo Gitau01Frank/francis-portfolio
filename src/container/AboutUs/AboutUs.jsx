@@ -7,7 +7,7 @@ const AboutUs = () => {
     <>
       <div className="app__container app__about">
         {/* THIS IS THE FIRST BIT ABOUT THE HEADING. */}
-        <h2 className="head-s-text">WHO AM I?</h2>
+        <h2 className="head-s-text">ABOUT ME</h2>
         <div className="head__line"></div>
         {/* THE PAGES CONTENT */}
 
