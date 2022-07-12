@@ -12,9 +12,11 @@
   };
   
   .experience-duration{
+  display:block;
+  width: fit-content;
   color:var(--light-blue);
   border-radius:10px;
-  margin:0.5rem 1rem;
+  margin:0.5rem 0rem;
   padding:0rem 0.5rem;
   font-size: 14px;
   border:1px solid var(--light-blue);

@@ -13,14 +13,13 @@
 }
 
 .app__footer-cards {
-  width: 90%;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   flex-wrap: wrap;
   margin: 4em 2rem 2rem;
-  // border:1px solid black;
   flex-direction: row;
   .btn-text{
     font-size: 1.5rem;
@@ -29,7 +28,7 @@
   .app__footer-card {
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
     margin: 1rem 0;
     padding: 1rem;

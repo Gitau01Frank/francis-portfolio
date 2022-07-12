@@ -7,64 +7,64 @@ import "./Projects.scss";
 const Work = () => {
   const [works, setWorks] = useState([
     {
-      title: "Form Handling",
+      title: "Interfacing Arduino with PIR Sensor",
       description:
         "Dynamically collect information from clients and store it safely in one place for future reference.",
       projectLink: "https://form-handlingreact.netlify.app/",
       codeLink: "https://github.com/FredzTech/Form_Handling-Front-End-",
       imageUrl:
         "https://freds-portfolio.s3.ap-southeast-1.amazonaws.com/Work-1652488535780.jpeg",
-      tags: ["All", "UI/UX"],
+      tags: ["All", "Cloud Computing"],
     },
     {
-      title: "Form Handling",
+      title: "Project 2",
       description:
         "Dynamically collect information from clients and store it safely in one place for future reference.",
       projectLink: "https://form-handlingreact.netlify.app/",
       codeLink: "https://github.com/FredzTech/Form_Handling-Front-End-",
       imageUrl:
         "https://freds-portfolio.s3.ap-southeast-1.amazonaws.com/Work-1652488535780.jpeg",
-      tags: ["All", "Web App"],
+      tags: ["All", "Cloud Computing"],
     },
     {
-      title: "Form Handling",
+      title: "Blinking LED",
       description:
         "Dynamically collect information from clients and store it safely in one place for future reference.",
       projectLink: "https://form-handlingreact.netlify.app/",
       codeLink: "https://github.com/FredzTech/Form_Handling-Front-End-",
       imageUrl:
         "https://freds-portfolio.s3.ap-southeast-1.amazonaws.com/Work-1652488535780.jpeg",
-      tags: ["All", "React JS"],
+      tags: ["All", "Embedded Systems"],
     },
     {
-      title: "Form Handling",
+      title: "Project 2",
       description:
         "Dynamically collect information from clients and store it safely in one place for future reference.",
       projectLink: "https://form-handlingreact.netlify.app/",
       codeLink: "https://github.com/FredzTech/Form_Handling-Front-End-",
       imageUrl:
         "https://freds-portfolio.s3.ap-southeast-1.amazonaws.com/Work-1652488535780.jpeg",
-      tags: ["All", "React JS"],
+      tags: ["All", "Embedded Systems"],
     },
     {
-      title: "Form Handling",
+      title: "Project 3",
       description:
         "Dynamically collect information from clients and store it safely in one place for future reference.",
       projectLink: "https://form-handlingreact.netlify.app/",
       codeLink: "https://github.com/FredzTech/Form_Handling-Front-End-",
       imageUrl:
         "https://freds-portfolio.s3.ap-southeast-1.amazonaws.com/Work-1652488535780.jpeg",
-      tags: ["All", "React JS"],
+      tags: ["All", "Cloud Computing"],
     },
     {
-      title: "Form Handling",
+      title: "Project 4",
       description:
         "Dynamically collect information from clients and store it safely in one place for future reference.",
       projectLink: "https://form-handlingreact.netlify.app/",
       codeLink: "https://github.com/FredzTech/Form_Handling-Front-End-",
       imageUrl:
         "https://freds-portfolio.s3.ap-southeast-1.amazonaws.com/Work-1652488535780.jpeg",
-      tags: ["All", "React JS"],
+      tags: ["All", "Embedded Systems"],
     },
   ]);
   const [filteredWork, setFilteredWork] = useState([]);
@@ -106,19 +106,17 @@ THE ACTIVE FILTER STATE TO THE NAME OF THE ITEMS EG WEB DESIGN NA NDO INATUMIKA 
 
       {/* This is the div that is responsible for the tags. */}
       <div className="app__work-filter">
-        {["UI/UX", "Web App", "Server App", "React JS", "All"].map(
-          (item, index) => (
-            <p
-              key={index}
-              onClick={() => handleWorkFilter(item)}
-              className={`app__work-filter-item app__flex card__text ${
-                activeFilter === item ? "item-active" : ""
-              }`}
-            >
-              {item}
-            </p>
-          )
-        )}
+        {["Embedded Systems", "Cloud Computing", "All"].map((item, index) => (
+          <p
+            key={index}
+            onClick={() => handleWorkFilter(item)}
+            className={`app__work-filter-item app__flex card__text ${
+              activeFilter === item ? "item-active" : ""
+            }`}
+          >
+            {item}
+          </p>
+        ))}
       </div>
 
       {/* THIS IS THE DIV THAT IS RESPONSIBLE FOR THE PROJECT LIKE THE CONTAINER BOX. */}

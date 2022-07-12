@@ -9,8 +9,10 @@ import arduinopir from "../assets/arduino-pir.jpg";
 import blinkled from "../assets/blink-led.jpeg";
 import cloudcomputing from "../assets/cloud-computing.png";
 import embeddedsystems from "../assets/embedded-systems.jpg";
+import mainProfile from "../assets/mainProfile.png";
 
 const images = {
+  mainProfile,
   arduinopir,
   blinkled,
   cloudcomputing,
