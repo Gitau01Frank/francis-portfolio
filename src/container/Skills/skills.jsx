@@ -57,6 +57,10 @@ const Skills = () => {
         skill: "C",
         expertise: 75,
       },
+      {
+        skill: "Linux",
+        expertise: 80,
+      },
     ]);
   }, []);
 
