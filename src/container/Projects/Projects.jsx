@@ -9,7 +9,7 @@ const Work = () => {
     {
       title: "Blink LED",
       description: "Hello world with the arduino.",
-      projectLink: "https://form-handlingreact.netlify.app/",
+      projectLink: "https://youtube.com/shorts/uaMCbCbZ3Rg?feature=share",
       codeLink: "https://github.com/FredzTech/Form_Handling-Front-End-",
       imageUrl:
         "https://hackster.imgix.net/uploads/attachments/939539/blob_f9aEIFJtMW.blob?auto=compress&w=900&h=675&fit=min&fm=jpg",
@@ -19,7 +19,7 @@ const Work = () => {
       title: "Interfacing Arduino with PIR sensor",
       description:
         "The PIR sensor is used to sense motion. In this case , when motion is detected, the buzzer goes off.",
-      projectLink: "https://form-handlingreact.netlify.app/",
+      projectLink: "https://youtube.com/shorts/M1GduWhraRI?feature=share",
       codeLink: "https://github.com/FredzTech/Form_Handling-Front-End-",
       imageUrl:
         "https://circuitdigest.com/sites/default/files/inlineimages/Arduino-motion-sensor.jpg",
