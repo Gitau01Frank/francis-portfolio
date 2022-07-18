@@ -16,7 +16,7 @@ const AboutUs = () => {
           {/* <img src={images.mainProfile} alt="Franci's" /> */}
           <motion.div
             whileInView={{ scale: [0, 1] }}
-            whileTap={{ scale: [1, 0.9] }}
+            // whileTap={{ scale: [1, 0.9] }}
             transition={{ duration: 0.5 }}
             className="app__flex p-s-text about__paragraph"
           >
