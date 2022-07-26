@@ -35,12 +35,14 @@ const Skills = () => {
         skill: "Embedded Systems",
         expertise: 90,
       },
-
+      {
+        skill: "Micropython",
+        expertise: 85,
+      },
       {
         skill: "Network Programming",
         expertise: 80,
       },
-
       {
         skill: "HTML",
         expertise: 95,
@@ -48,6 +50,10 @@ const Skills = () => {
       {
         skill: "CSS",
         expertise: 90,
+      },
+      {
+        skill: "Javascript",
+        expertise: 80,
       },
       {
         skill: "GIT",
