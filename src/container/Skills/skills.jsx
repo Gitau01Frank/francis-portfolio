@@ -23,9 +23,9 @@ const Skills = () => {
         title: "Gear Box Ltd",
         duration: "May 2022 - August 2022",
         pointers: [
-          "Interacted with embedded systems",
-          "Tackled network programming",
-          "Worked with MQTT communication protocol",
+          "Worked with the arduino, node mcu i.e ESP32, Raspberry pi",
+          "Applied skills Embedded Systems on the Door Automation project",
+           "Worked with MQTT communication protocol",
         ],
       },
     ]);
@@ -36,7 +36,7 @@ const Skills = () => {
         expertise: 90,
       },
       {
-        skill: "Micropython",
+        skill: "Python",
         expertise: 85,
       },
       {
